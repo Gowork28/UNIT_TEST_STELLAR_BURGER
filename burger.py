@@ -1,8 +1,6 @@
+from Diplom_1.bun import Bun
+from Diplom_1.ingredient import Ingredient
 from typing import List
-
-from praktikum.bun import Bun
-from praktikum.ingredient import Ingredient
-
 
 class Burger:
     """

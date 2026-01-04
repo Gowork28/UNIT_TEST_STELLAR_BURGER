@@ -1,10 +1,8 @@
+from Diplom_1.bun import Bun
+from Diplom_1.burger import Burger
+from Diplom_1.database import Database
+from Diplom_1.ingredient import Ingredient
 from typing import List
-
-from praktikum.bun import Bun
-from praktikum.burger import Burger
-from praktikum.database import Database
-from praktikum.ingredient import Ingredient
-
 
 def main():
     # Инициализируем базу данных
@@ -27,7 +25,7 @@ def main():
     burger.add_ingredient(ingredients[3])
     burger.add_ingredient(ingredients[5])
 
-    # Переместим слой с ингредиентом
+    # Переместим слой с ингредиенто
     burger.move_ingredient(2, 1)
 
     # Удалим ингредиент
