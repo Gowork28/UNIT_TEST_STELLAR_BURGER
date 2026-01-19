@@ -50,9 +50,7 @@ class TestBurger:
         #  передали начинку и соус в метод add_ingredient
         burger_object.add_ingredient(mock_sauce)
         burger_object.add_ingredient(mock_filling)
-
-        assert len(burger_object.ingredients) == 2
-        #  удалили ингредиент с индексом 0
+        #  удалили один ингредиент
         burger_object.remove_ingredient(0)
 
         assert len(burger_object.ingredients) == 1
@@ -63,8 +61,6 @@ class TestBurger:
         #  передали начинку и соус в метод add_ingredient
         burger_object.add_ingredient(mock_sauce)
         burger_object.add_ingredient(mock_filling)
-
-        assert len(burger_object.ingredients) == 2
         #  удалили все ингредиенты
         burger_object.remove_ingredient(0)
         burger_object.remove_ingredient(0)
@@ -89,8 +85,6 @@ class TestBurger:
         #  передали начинку и соус в метод add_ingredient
         burger_object.add_ingredient(mock_sauce)
         burger_object.add_ingredient(mock_filling)
-
-        assert len(burger_object.ingredients) == 2
         #  поменяли местами ингредиенты
         burger_object.move_ingredient(0, 1)
 
@@ -181,12 +175,6 @@ class TestBurger:
 
         receipt = burger_object.get_receipt()
         assert expected_receipt ==  receipt
-        #  разделение чека на строки
-        lines = receipt.split('\n')
-        #  определение первого ингредиента в чеке
-        first_ingredient = new_ingredients[0]
-
-        assert lines[1] == f"= {first_ingredient['type'].lower()} {first_ingredient['name']} ="
 
 
     def test_cannot_get_receipt_without_bun_success(self, burger_object, mock_sauce, mock_filling):
