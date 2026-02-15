@@ -24,7 +24,13 @@ Stellar Burger - это космический сервис онлайн - за�
 - `tests` - пакет, содержащий тест класса burger_test.py
 
 ## Стек:
-**PyCharm, Python, Allure, Pytest, coverage**
+<div align="left">
+  <img src="https://img.shields.io/badge/PyCharm-000000?style=for-the-badge&logo=pycharm&logoColor=white" alt="PyCharm"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/Allure-FF8C00?style=for-the-badge&logo=allure&logoColor=white" alt="Allure"/>
+  <img src="https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" alt="Pytest"/>
+  <img src="https://img.shields.io/badge/coverage-5C2D91?style=for-the-badge&logo=coverage&logoColor=white" alt="coverage"/>
+</div>
 
 ## Инструкция по запуску:
 
